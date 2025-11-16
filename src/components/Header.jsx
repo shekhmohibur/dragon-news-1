@@ -1,9 +1,9 @@
 import logo from '../assets/logo.png';
 const Header = () => {
     return (
-        <div className="flex flex-col justify-center items-center py-4">
+        <div className="flex flex-col justify-center items-center py-4 gap-2">
             <img src={logo} alt="Dragon News logo" />
-            <p>Journalism Without Fear or Favour</p>
+            <p className='text-accent text-lg'>Journalism Without Fear or Favour</p>
         </div>
     );
 };
