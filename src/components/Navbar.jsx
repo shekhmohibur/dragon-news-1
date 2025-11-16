@@ -11,16 +11,16 @@ const Navbar = () => {
                 <NavLink to="/about">About</NavLink>
                 <NavLink to="/career">Career</NavLink>
             </div>
-            <div class="dropdown md:hidden">
-            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /> </svg>
+            <div className="dropdown md:hidden">
+            <div tabIndex="0" role="button" className="btn btn-ghost btn-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /> </svg>
             </div>
             <ul
-                tabindex="-1"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3  p-2 shadow">
+                tabIndex="-1"
+                className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3  p-2 shadow">
                 <NavLink to={"/"}>Home</NavLink>
                 <NavLink to={"/about"}>About</NavLink>
-                <NavLink to={"/career"}>Carrer</NavLink>
+                <NavLink to={"/career"}>Career</NavLink>
             </ul>
     </div>
             <div className="login-btn flex items-center gap-2">

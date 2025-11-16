@@ -1,13 +1,13 @@
 import React, { Suspense } from 'react';
-import CategoryNews from '../../layouts/CategoryNews';
+import Categories from './Categories';
 
 const LeftAside = () => {
     return (
         <div>
             <Suspense fallback={
-                <span class="loading loading-dots loading-md"></span>
+                <span className="loading loading-dots loading-md"></span>
             }>
-                <CategoryNews></CategoryNews>
+                <Categories></Categories>
             </Suspense>
         </div>
     );

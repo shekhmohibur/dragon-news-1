@@ -6,6 +6,10 @@
 *{
     font-family: 'Poppins', sans-serif;
 }
+a.active{
+    @apply bg-base-300;
+    color: black;
+}
 @plugin "daisyui/theme"{
     name: "light";
     default: true;
