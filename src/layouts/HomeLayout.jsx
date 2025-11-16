@@ -1,7 +1,10 @@
 import React from 'react';
 import { Outlet } from 'react-router';
 import Header from '../components/Header';
-import Letest from '../components/Latest';
+import Latest from '../components/Latest';
+import Navbar from '../components/Navbar';
+import LeftAside from '../components/homelayout/LeftAside';
+import RightAside from '../components/homelayout/RightAside';
 
 const HomeLayout = () => {
     return (
@@ -9,17 +12,25 @@ const HomeLayout = () => {
             <header>
                 <Header />
                 <section className='latest'>
-                    <Letest></Letest>
+                    <Latest></Latest>
                 </section>
+                <nav className='nav'>
+                    {/* navbar component */}
+                    <Navbar></Navbar>
+                </nav>
             </header>
-            <main>
+            <main className='home-layout grid grid-cols-12 gap-4'>
                 {/* left aside */}
-                <aside></aside>
-                <div className="main">
+                <aside className='col-span-3'>
+                    <LeftAside></LeftAside>
+                </aside>
+                <div className="main col-span-6">
                     <Outlet></Outlet>
                 </div>
                 {/* right aside */}
-                <aside></aside>
+                <aside className='col-span-3'>
+                    <RightAside></RightAside>
+                </aside>
             </main>
         </div>
     );
