@@ -3,9 +3,9 @@ import { Link } from "react-router";
 
 const Latest = () => {
     return (
-        <div className="bg-base-200 flex gap-4 p-4 items-center">
-            <Link to="/" className="bg-secondary text-white text-xl py-2 px-3">Latest</Link>
-            <Marquee className="text-xl font-semibold"
+        <div className="bg-base-200 flex gap-2 p-2 md:gap-4 md:p-4 items-center">
+            <Link to="/" className="bg-secondary text-white text-xs md:text-xl py-2 px-3">Latest</Link>
+            <Marquee className="text-xs md:text-xl font-semibold text-primary"
             pauseOnHover={true}
             speed={100}
             >Match Highlights: Germany vs Spain — as it happened   !   Match Highlights: Germany vs Spain as...</Marquee>

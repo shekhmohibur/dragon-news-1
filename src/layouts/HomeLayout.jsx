@@ -19,18 +19,19 @@ const HomeLayout = () => {
                     <Navbar></Navbar>
                 </nav>
             </header>
-            <main className='home-layout grid grid-cols-12 gap-4'>
+            <main className='home-layout grid grid-cols-1 md:grid-cols-12 gap-4'>
                 {/* left aside */}
-                <aside className='col-span-3'>
+                <aside className='order-1 md:col-span-3'>
                     <LeftAside></LeftAside>
                 </aside>
-                <div className="main col-span-6">
-                    <Outlet></Outlet>
-                </div>
+                
                 {/* right aside */}
-                <aside className='col-span-3'>
+                <aside className='order-2 md:order-3 md:col-span-3'>
                     <RightAside></RightAside>
                 </aside>
+                <div className="main order-3 md:order-2 md:col-span-6">
+                    <Outlet></Outlet>
+                </div>
             </main>
         </div>
     );
