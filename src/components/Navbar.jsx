@@ -7,9 +7,9 @@ const Navbar = () => {
                 <h2 className="font-semibold">Dragon News</h2>
             </div>
             <div className="nav hidden md:flex justify-center gap-6 text-accent">
-                <NavLink to="/">Home</NavLink>
-                <NavLink to="/about">About</NavLink>
-                <NavLink to="/career">Career</NavLink>
+                <NavLink className="btn bg-base-100 border-0 text-accent" to="/">Home</NavLink>
+                <NavLink className="btn bg-base-100 border-0 text-accent" to="/about">About</NavLink>
+                <NavLink className="btn bg-base-100 border-0 text-accent" to="/career">Career</NavLink>
             </div>
             <div className="dropdown md:hidden">
             <div tabIndex="0" role="button" className="btn btn-ghost btn-circle">
